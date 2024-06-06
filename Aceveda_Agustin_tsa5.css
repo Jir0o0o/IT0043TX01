@@ -1,13 +1,24 @@
 *{
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box  ;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(TESTING.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.item:hover{
+    background-image: url(cool.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .container{
     width: 80vw;
-    /* border: 5px solid black; */
     margin: 20px auto;
     padding: 20px;
     display: grid;
@@ -20,35 +31,19 @@ img{
 }
 
 .item{
-    border: 3px solid black;
-    border-radius: 10px;
-    padding: 20px;
+    background-color: black;
+    color: white;
+    border: 3px solid rgb(77, 4, 4);
+    border-radius: 30px;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
     gap: 10px;
 }
 
-#itadori .details, #kugisaki .details{
-    display: block;
-    align-items: center;
-    gap: 30px; 
-}
-
-.name{
-    font-size: 2rem;
-    font-weight: 700;
-}
-
-.race{
-    font-size: 1rem;
-    font-weight: 550;
-}
-
-.details{
-    text-align: center;
-    align-items: flex-start;
+#Yuji .details, #Kenjaku .details{
+    gap: 50px;
 }
 
 .desc{
@@ -56,113 +51,107 @@ img{
     line-height: 1.5;
 }
 
-#fushiguro{
-    
-background-color: black;
-color: aliceblue;
+.details{
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
-#gojo{
-    background-color:aliceblue;
-} 
+.name{
+    font-size: 2rem;
+    font-weight: 700;
+}
 
-#itadori{
-    background-color:lightcoral;
+.name-race{
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+#Yuji{
+    background-color: black;
     grid-column: 1/3;
-        grid-row: 1/2;
+    grid-row: 1/2;
 }
 
-#sukuna{
-    background-color: crimson;
+#Sukuna{
+    background-color: black;
+}
+
+#Gojo{
+    background-color: black;
+}
+
+#Kenjaku{
+    background-color: black;
     grid-column: 2/4;
     grid-row: 2/3;
 }
 
-#kugisaki{
-    background-color: lightsalmon;
+#Megumi{
+    background-color: black;
     grid-column: 4/5;
     grid-row: 1/3;
 }
 
-@media (max-width:1000px){
+@media (max-width: 1000px){
     .container{
         grid-template-columns: repeat(2, 1fr);
     }
-
-    #itadori{
+    
+    #Yuji{
         grid-column: 1/2;
         grid-row: 1/2;
     }
 
-    #sukuna{
-        grid-column: 1/2;
-        grid-row: 6/7;
+    #Sukuna{
+        grid-column: 2/3;
+        grid-row: 1/2;
     }
 
-    #gojo{
+    #Gojo{
         grid-column: 1/2;
         grid-row: 3/4;
     }
 
-    #kugisaki{
-        grid-column: 1/2;
-        grid-row: 5/6;
+    #Kenjaku{
+        grid-column: 2/3;
+        grid-row: 3/4;
     }
 
-    #fushiguro{
-        grid-column: 1/2;
+    #Megumi{
+        grid-column: 1/3;
         grid-row: 4/5;
     }
-
-    #itadori .details, #kugisaki .details{
-        display: block;
-    }
-
-    #sukuna .details{
-        display: flex;
-        align-items: center;
-        gap: 40px;
-    }
-
 }
 
-@media (max-width:768px){
+@media (max-width: 768px){
     .container{
         grid-template-columns: 1fr;
     }
 
-    #itadori{
+    #Yuji{
         grid-column: 1/2;
         grid-row: 1/2;
     }
 
-    #gojo{
+    #Sukuna{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    #Gojo{
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+
+    #Kenjaku{
         grid-column: 1/2;
         grid-row: 3/4;
     }
 
-    #fushiguro{
-        grid-column: 1/2;
-        grid-row: 4/5;
-    }
-    #kugisaki{
+    #Megumi{
         grid-column: 1/2;
         grid-row: 5/6;
     }
-
-    #sukuna{
-        grid-column: 1/2;
-        grid-row: 6/7;
-    }
-
-    #itadori .details, #kugisaki .details{
-        display: flex;
-    }
-
-    .details{
-        display: flex;
-        align-items: center;
-        gap: 40px;
-    }
-
 }
