@@ -22,7 +22,7 @@ nav {
   height: fit-content;
   padding: 10px;
   color: rgb(245, 239, 239);
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 
 nav .container {
@@ -180,6 +180,8 @@ main .container {
   transition: transform 600ms cubic-bezier(.3, .7, .4, 1);
 }
 
+/* Breakpoint */
+
 @media (max-width: 1080px) {
   nav .container {
       flex-direction: column;
@@ -217,6 +219,7 @@ main .container {
   .news-1-h1{
       padding-left: 120px;
       padding-top: 120px;
+      justify-content: center;
   }
 
   .news-2-p {
@@ -225,6 +228,7 @@ main .container {
   }
 }
 
+/* Breakpoint */
 
 @media (min-width: 768px) {
   .button-82-front {
@@ -281,6 +285,7 @@ main .container {
   justify-content: space-around;
   line-height: 0.98;
   border-radius: 50px;
+  
 }
 
 .news-1-h1 {
@@ -288,6 +293,7 @@ main .container {
   padding-left: 60px;
   padding-top: 20px;
   font-size: 2rem;
+  justify-content: center;
 }
 
 .news-2 {
@@ -304,7 +310,7 @@ main .container {
 }
 
 .news-2-p {
-  padding-left: 230px;
+  padding-left: 20px;
   font-weight: 600;
 }
 
@@ -313,6 +319,8 @@ main .container {
   gap: 10px;
   align-items: center;
   padding-bottom: 50px;
+  padding-left: 50px;
+  padding-top: 20px;
 }
 
 .bottom-pic {
@@ -337,13 +345,13 @@ main .container {
 }
 
 .bottom-p {
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-style: italic;
   text-align: justify;
 }
 
 .bottom2-p {
-  font-size: 0.8rem;
+  font-size: 1rem;
   text-align: justify;
 }
 
