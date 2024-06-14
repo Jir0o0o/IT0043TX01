@@ -261,7 +261,7 @@ main .container{
     display: flex;
     gap: 10px;
     align-items: center;
-    padding: 60px;
+    padding-bottom: 60px;
 }
 
 .bottom-pic{
