@@ -211,7 +211,7 @@ main .container {
   .news {
       order: -1;
       margin-bottom: 10px;
-      border-radius: 50px;
+      border-radius: 20px;
       border-color:whitesmoke;
       padding-top: 20px;
   }
@@ -284,7 +284,7 @@ main .container {
   flex-direction: column;
   justify-content: space-around;
   line-height: 0.98;
-  border-radius: 50px;
+  border-radius: 20px;
   
 }
 
