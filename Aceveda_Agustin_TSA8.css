@@ -55,14 +55,13 @@ button{
     font-weight: 500;
     font-size: 125rem;
     width: 60%;
-    height: 300px;
+    height: 325px;
     padding: 10px;
 }
 
 .flex-item{
     border: 2px solid black;
     border-radius: 10px;
-    margin: 15px;
     padding: 10px;
     text-align: center;
     height: 55px;
