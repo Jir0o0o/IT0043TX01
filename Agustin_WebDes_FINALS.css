@@ -14,6 +14,10 @@ body {
     background-attachment: fixed;
 }
 
+.logo{
+    font-weight: 800;
+}
+
 nav {
     background-color: rgba(0, 0, 0, 0.833);
     height:auto;
@@ -92,6 +96,21 @@ main .container {
     text-align: justify;
 }
 
+.about-me-pic{
+    display: flex;
+    height: 250px;
+    width: auto;
+    gap: 95px;
+    justify-content: center;
+
+}
+
+.about-me-pic img{
+    border-radius: 30px;
+    height: 100%;
+    width: auto;
+}
+
 .media-logo{
     display: flex;
     flex-direction:row;
@@ -148,7 +167,7 @@ main .container {
     color: rgb(255, 255, 255);
     padding: 25px;
     text-align: justify;
-    justify-content: left;
+    justify-content: center;
 }
 
 .buttons{
@@ -174,8 +193,7 @@ main .container {
 }
 
 .butto:hover {
-    background-image: url(rocket.jpg);
-    border-color: 4px solid red;
+    background-color: black;
 }
 
 #Project{
@@ -243,6 +261,17 @@ a{
         height: 300px;
         padding: 20px;
     }
+    .about-me-pic {
+        height: auto;
+        width: 80%;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .about-me-pic img {
+        width: 70%;
+        margin: 50px;
+
+    }
     .media-logo {
         gap: 50px;
     }
@@ -263,6 +292,15 @@ a{
     .intro-pic img, .school-logo {
         height: 290px;
         padding: 10px;
+    }
+    .about-me-pic {
+        height: auto;
+        width: 90%;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .about-me-pic img {
+        width: 80%;
     }
     .media-logo {
         gap: 20px;
@@ -291,9 +329,7 @@ a{
         width: 80%;
         margin: 20px;
     }
-
-    .answer{
+    .answer {
         align-items: justify;
     }
 }
-
