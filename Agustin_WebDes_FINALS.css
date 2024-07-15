@@ -54,9 +54,7 @@ nav a:hover {
 
 .introduction-container{
     display:flex;
-    /* border:3px solid rgba(255, 255, 255, 0.833) ; */
     width: 75%;
-    /* border-radius: 10px; */
     justify-content: center;
     align-items: center;
     margin: auto;
@@ -101,14 +99,12 @@ main .container {
     gap: 150px;
     justify-content: center;
     margin-top: 50px;
-    margin-bottom: 50px;;
-    
+    margin-bottom: 50px;
 }
 
 .media-logo img{
     height: 75px;
     width: auto;
-    
 }
 
 #contact{
@@ -124,7 +120,6 @@ main .container {
     flex-direction: column;
     margin-left: 50px;
     align-items: center;
-    
 }
 
 .header{
@@ -158,10 +153,10 @@ main .container {
 
 .buttons{
     display: flex;
-    gap: 0px;
-    margin: 50px;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 50px;
+    margin: 20px;
     flex-direction: column;
+    align-items: center;
 }
 
 .butto{
@@ -171,16 +166,16 @@ main .container {
     display: inline-block;
     margin: 10px; 
     padding: 10px 20px;
-    /* background-color: #4b0404;  */
     background: transparent;
-    border-color: 2px solid aliceblue;
     color: white;
     border: none;
     cursor:pointer;
+    width: 40%;
 }
 
 .butto:hover {
-    background-color: #000000;
+    background-image: url(rocket.jpg);
+    border-color: 4px solid red;
 }
 
 #Project{
@@ -196,7 +191,6 @@ main .container {
   margin: 25px;
   margin-left: 100px;
   justify-content: center;
-
 }
 
 .question{
@@ -206,11 +200,13 @@ main .container {
   padding: 30px;
   color: aliceblue;
   width: 40%;
+  text-align: justify;
 }
 
 .answer{
   color: aliceblue;
   padding: 10px;
+  text-align: justify;
 }
 
 .contacts{
@@ -228,3 +224,76 @@ a{
     margin-bottom: 10px;
     text-align: center;
 }
+
+/* Breakpoints for tablets */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav li {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    .introduction-container {
+        flex-direction: column;
+        width: 90%;
+    }
+    .intro-pic img, .school-logo {
+        height: 300px;
+        padding: 20px;
+    }
+    .media-logo {
+        gap: 50px;
+    }
+    .buttons {
+        width: 100%;
+    }
+}
+
+/* Breakpoints for small devices (phones) */
+@media (max-width: 480px) {
+    nav .container {
+        flex-direction: row;
+    }
+    nav a {
+        font-size: 1rem;
+        padding: 10px;
+    }
+    .intro-pic img, .school-logo {
+        height: 290px;
+        padding: 10px;
+    }
+    .media-logo {
+        gap: 20px;
+    }
+    .media-logo img {
+        height: 50px;
+    }
+    .header {
+        font-size: 2rem;
+        margin-top: 20px;
+    }
+    .desc {
+        width: 80%;
+        padding: 15px;
+    }
+    .buttons {
+        width: 90%;
+        gap: 20px;
+    }
+    .butto {
+        font-size: 1.2rem;
+        width: 80%;
+    }
+    .question {
+        font-size: 1.2rem;
+        width: 80%;
+        margin: 20px;
+    }
+
+    .answer{
+        align-items: justify;
+    }
+}
+
