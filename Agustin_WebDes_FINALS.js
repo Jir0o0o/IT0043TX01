@@ -23,3 +23,23 @@ document.querySelectorAll('.butto').forEach(button => {
         }
     });
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const navLinks = document.querySelectorAll('nav ul li a');
+    const profilePic = document.getElementById('main-pic');
+
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            navLinks.forEach(navLink => navLink.classList.remove('active'));
+            link.classList.add('active');
+        });
+    });
+
+    profilePic.addEventListener('mouseover', () => {
+        profilePic.src = 'cat_waving.gif';
+    });
+
+    profilePic.addEventListener('mouseout', () => {
+        profilePic.src = 'angaspic.jpg';
+    });
+});
