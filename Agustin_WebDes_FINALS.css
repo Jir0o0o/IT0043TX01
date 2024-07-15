@@ -24,7 +24,10 @@ nav {
     padding: 10px;
     color: rgb(248, 95, 0);
     margin-bottom: 30px;
-    opacity: 90%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
 }
 
 nav .container {
