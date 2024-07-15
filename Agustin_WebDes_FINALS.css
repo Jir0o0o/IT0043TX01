@@ -1,0 +1,230 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: 0.5s all ease;
+}
+
+body {
+    background-image: url(webdesbg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.833);
+    height:auto;
+    padding: 10px;
+    color: rgb(248, 95, 0);
+    margin-bottom: 30px;
+    opacity: 90%;
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav li {
+    list-style: none;
+    margin-left: 15px;
+}
+
+nav a {
+    color: rgb(255, 94, 0);
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 500;
+    padding: 15px; 
+}
+
+nav a:hover {
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+    text-underline-offset: 8px;
+}
+
+.introduction-container{
+    display:flex;
+    /* border:3px solid rgba(255, 255, 255, 0.833) ; */
+    width: 75%;
+    /* border-radius: 10px; */
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.introduction { 
+    justify-content: justify;
+}
+
+main .container {
+    display: flex;
+    justify-content: center;
+}
+
+.intro-pic img {
+    display: flex;
+    height: 400px;
+    width: auto;
+    border-radius: 100px; 
+    margin: 0px;
+    padding: 50px 
+}
+
+.school-logo {
+    display: flex;
+    height: 350px;
+    width: auto;
+    padding: 50px;
+}
+
+.intro-desc {
+    display: flex;
+    font-family:cursive;
+    color: rgb(255, 255, 255);
+    text-align: justify;
+}
+
+.media-logo{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    gap: 150px;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;;
+    
+}
+
+.media-logo img{
+    height: 75px;
+    width: auto;
+    
+}
+
+#contact{
+    color: aliceblue;
+    font-size: 2.5rem;
+    font-family: cursive;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+
+.contact-info-container{
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    align-items: center;
+    
+}
+
+.header{
+    display: flex;
+    font-size: 2.8rem;
+    font-family:cursive;
+    color: rgb(255, 255, 255);
+    justify-content: center;
+    padding-top: 30px;
+    font-weight: 900;
+    margin-top: 50px;
+}
+
+.desc{
+    display: flex;
+    width: 60%;
+    padding: 30px;
+    font-weight: 800;
+    justify-content: center;
+}
+
+#desc{
+    display: flex;
+    font-size: 1.3rem;
+    font-family:cursive;
+    color: rgb(255, 255, 255);
+    padding: 25px;
+    text-align: justify;
+    justify-content: left;
+}
+
+.buttons{
+    display: flex;
+    gap: 0px;
+    margin: 50px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    flex-direction: column;
+}
+
+.butto{
+    font-size: 1.8rem;
+    flex-grow: .5;
+    border-radius: 10px;
+    display: inline-block;
+    margin: 10px; 
+    padding: 10px 20px;
+    /* background-color: #4b0404;  */
+    background: transparent;
+    border-color: 2px solid aliceblue;
+    color: white;
+    border: none;
+    cursor:pointer;
+}
+
+.butto:hover {
+    background-color: #000000;
+}
+
+#Project{
+    font-size: 2.5rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 800;
+    margin: 30px;
+    padding: 20px;
+}
+
+.FAQ-container{
+  display: flex;
+  margin: 25px;
+  margin-left: 100px;
+  justify-content: center;
+
+}
+
+.question{
+  border: 3px solid whitesmoke;
+  border-radius: 25px;
+  margin: 50px;
+  padding: 30px;
+  color: aliceblue;
+  width: 40%;
+}
+
+.answer{
+  color: aliceblue;
+  padding: 10px;
+}
+
+.contacts{
+  color: aliceblue;
+    font-size: 1.5rem;
+    font-family: cursive;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+a{
+  color: aliceblue;
+    font-size: 1.3rem;
+    font-family: cursive;
+    margin-bottom: 10px;
+    text-align: center;
+}
